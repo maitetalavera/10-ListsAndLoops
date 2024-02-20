@@ -18,6 +18,19 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+ingredients = ["flour", "sugar", "eggs", "milk"]
+
+def ingredient_search(ingredients, list):
+    for x in ingredients: 
+        if x == ingredients:
+            return True
+        if x != ingredients:
+            return False
+
+
+        
+
+
 ###############################################################################
 # TODO: 1. (3 pts)
 #   
@@ -52,3 +65,4 @@
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
