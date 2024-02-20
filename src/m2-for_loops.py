@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (2 pts)
+# DONE: 1. (2 pts)
 #   
 #   For this _TODO_, first, copy the line of code from m1 where you created your list and paste it under this _TODO_. We will use this list some more here.
 #
@@ -10,8 +10,12 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+ingredients = ["flour", "sugar", "eggs", "milk"]
+for x in ingredients:
+    print(x)
+
 ###############################################################################
-# TODO: 2. (3 pt)
+# DONE: 2. (3 pt)
 #   
 #   Let's try using an if statement inside a for loop.
 #   
@@ -25,6 +29,11 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+for x in ingredients: 
+    if x == "sugar":
+        break
+    print("I found sugar!")
 
 ###############################################################################
 # TODO: 3. (3 pts)
@@ -41,4 +50,9 @@
 #   NOTE: Remember, lists start with index 0.
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
-###############################################################################
+##############################################################################
+
+for x in range(6): 
+    for x in range (x+1):
+        print("*", end = "")
+    print()
