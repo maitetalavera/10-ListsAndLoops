@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #   
 #   Now, let's try to combine a few of the things we learned in previous exercises together. We are going to improve upon some of the loops that we created in m2. Feel free to copy and paste them as you see fit.
 #
@@ -20,19 +20,22 @@
 
 ingredients = ["flour", "sugar", "eggs", "milk"]
 
-def ingredient_search(ingredients, list):
-    for x in ingredients: 
-        if x == ingredients:
+def ingredient_search(ingredient, list):
+    for x in list: 
+        if x == ingredient:
             return True
-        if x != ingredients:
-            return False
+    return False
+
+ingredient_search("flour", ingredients)
+ingredient_search("vanilla", ingredients)
+            
 
 
         
 
 
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #   
 #   For this _TODO_, write a function called triangle() that takes one parameter:
 #       - size  <- int
@@ -66,3 +69,10 @@ def ingredient_search(ingredients, list):
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def triangle(size):
+    for x in range(size): 
+        for x in range(x+1):
+            print("*", end = "")
+        print()
+
+triangle(4)
